@@ -6,15 +6,17 @@ body {
   --text-color: #757575;
   --text-color-actve: #ffffff;
   --accent-color: #2196f3;
+  --button-hover: #188ce8;
   --footer-color: #2f303a;
+  --background-team: #f5f4fa;
 }
 
-/* Стили для главной страницы */
-.list-description {
-  color: var(--text-color);
+/* Делает активной вкладку текущей страницы */
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
-/* Стиль для ЛОГОТИПА */
+/*TODO: Стиль для ЛОГОТИПА */
 .site-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -29,63 +31,223 @@ body {
   color: var(--primary-text-color);
 }
 
+/*TODO: Стиль для лого в футере */
+.light-logo {
+  color: var(--text-color-actve);
+}
+
+/* Стили для ссылок хедере и контактов общие */
+.site-nav,
+.list-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  list-style: none;
+}
+
+/* TODO: Стили для контактов в хедере при наведении */
+.contact-item .link.list-link {
+  color: var(--text-color);
+}
+
+.contact-item .link.list-link:hover {
+  color: var(--accent-color);
+}
+
+/* Стили для ссылок хедера и контакто */
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-/* Стиль для навигации */
-/* Убирает булеты у списков */
-.list {
+
+/* Стили для ссылок навигации хедера при наведении*/
+.list .link:hover {
+  color: var(--accent-color);
+}
+
+.contact {
   list-style: none;
 }
 
-/* Делает активной вкладку текущей страницы */
-.site-nav .link.current {
-  color: var(--accent-color);
+/* TODO: Стили для main index */
+.hero {
+  background-color: var(--footer-color);
 }
 
-/* Клас для ссылок адреса */
-.list-link {
-  color: var(--text-color);
-}
-
-/* Изминения цвета ссылки при наведении */
-.list-link:hover {
-  color: var(--accent-color);
-}
-
-/* стили для фильтра страницы portfolio */
-.button-menu:hover,
-.button-menu:focus {
-  background-color: #188ce8;
-}
-.button.button-menu {
-  font-family: 'Roboto';
-}
-
-/* a:hover {
-  color: var(--accent-color);
-} */
-/* style for link */
-/* .link {
-  text-decoration: none;
-  color: var(--primary-text-color);
-} */
-
-/* Текст описания у параграфа страница portfolio */
-/* .list-description {
-  color: var(--text-color);
-  font-family: "Roboto";
-} */
-
-/* Клас для ссылок адреса страница portfolio */
-/* .link-color {
-  color: var(--text-color-actve);
-  font-family: "Roboto";
+/* Стиль заголовка */
+.hero-title {
+  font-family: Roboto;
   font-style: normal;
-} */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
 
-/* style for logo */
-/* .site-logo {
+/* TODO: Цвет кнопки */
+.hero-button .hero-link {
+  color: var(--text-color-actve);
+}
+
+/* Фон кнопки */
+.hero-button {
+  background-color: var(--accent-color);
+}
+
+/* Фон кнопки при ховере */
+.hero-button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Убирает у кнопки подчеркивание */
+.hero-link {
   text-decoration: none;
-} */
+}
+
+/* Стили особенности */
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.benefits-descriotion {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Стили для заголовка чем мы занимаемся
+и наша конманда */
+.heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/*TODO: Стили для чем мы заниманиемся */
+
+.section {
+  background-color: var(--background-team);
+}
+
+.work-img {
+  list-style: none;
+}
+
+/*TODO: Стили наша команда */
+.team {
+  list-style: none;
+}
+
+.team-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*TODO: Стили для portfolio */
+.button-all {
+  background-color: var(--accent-color);
+  color: var(--background-team);
+}
+
+.button-menu:hover {
+  background-color: var(--accent-color);
+  color: var(--background-team);
+}
+
+.button-menu {
+  background-color: var(--background-team);
+}
+
+.filters {
+  list-style: none;
+}
+
+.projeckts {
+  list-style: none;
+}
+
+.projeckts-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.projeckts-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* TODO: Стили для футера */
+.footer {
+  background-color: var(--footer-color);
+}
+
+/* Стили для адреса в футере */
+.address-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.address-link:hover {
+  color: var(--text-color-actve);
+}
