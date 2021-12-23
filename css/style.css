@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', 'Roboto', sans-serif;
   background-color: #ffffff;
+  letter-spacing: 0.03em;
 }
 :root {
   --primary-text-color: #212121;
@@ -17,13 +18,32 @@ body {
   color: var(--accent-color);
 }
 
+/*^ СБРАСЫВАЕМ СТИЛИ ДЛЯ ЭЛЕМЕНТОВ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 /*^ Стиль для ЛОГОТИПА */
 .site-logo {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -43,10 +63,10 @@ body {
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
-
   line-height: 16px;
   color: var(--text-color);
   list-style: none;
+  letter-spacing: 0.02em;
 }
 
 /*^ Стили для контактов в хедере*/
@@ -125,7 +145,6 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
@@ -135,7 +154,6 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -147,7 +165,6 @@ body {
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -172,7 +189,6 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -181,15 +197,73 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
-/*^ Стили для portfolio */
+/*^  ГЛОБАЛЬНЫЕ СТИЛИ ДЛЯ portfolio */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*^ ЗАДАЕМ ВНУТРЕНИЕ ОТСТУПЫ ШАПКЕ  */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/*^  ЗАДАЕМ ВНУТРЕНИЕ СТИЛИ ДЛЯ СЕКЦИИ HERO */
+.feature {
+  padding-top: 25px;
+}
+
+/*^ НЕ ВИДНО НА СТРАНИЦЕ НО ВИДНО В ГУГЛ  */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*^  ЗАДАЕМ ВНУТРЕНИЕ СТИЛИ ДЛЯ СЕКЦИИ FEATURE */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/*^ СТИЛИ ВНУТРЕНИЕ ДЛЯ ЧЕМ МЫ ЗАНИМАЕМСЯ DOING  */
+.doing {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+/*^ НАША КОМАНДА  */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*^ВНУТРЕНИЕ СТИЛИ ДЛЯ FOOTER  */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .button-all {
   background-color: var(--accent-color);
   color: var(--background-team);
   cursor: pointer;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .button-menu:hover,
@@ -205,7 +279,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
 }
 
 .filters,
